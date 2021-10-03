@@ -2,6 +2,7 @@ from flask import Flask,redirect,url_for,render_template,request
 import requests
 import pickle
 import numpy as np
+import jsonify
 
 app = Flask(__name__)
 model = pickle.load(open('random_forest_regression_model.pkl', 'rb'))
